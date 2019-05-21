@@ -12,7 +12,18 @@ $ npm install --save luck-balance
 ```js
 const luckBalance = require('luck-balance');
 
-luckBalance('Rainbow');
+const k = 3;
+
+const contests = [
+  [5, 1],
+  [2, 1],
+  [1, 1],
+  [8, 1],
+  [10, 0],
+  [5, 0]
+];
+
+let maximumLuckAmount = luckBalance(k, contests);
 ```
 ## License
 
